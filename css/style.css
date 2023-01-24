@@ -12,7 +12,7 @@
     Typo
 --------------*/
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -20,8 +20,8 @@
     Debug
 --------------*/
 
-.debug header .h-top .h-bar >div,
-.debug header .h-top .h-bar >nav,
+/*.debug header .h-top .h-bar >div,
+.debug header .h-top .h-bar >nav,*/
 .debug header .h-bottom > div,
 .debug main section .row > div,
 .debug .f-top > div,
@@ -69,8 +69,16 @@
     Header
 --------------*/
 
-header {
+/*header {
     border-bottom: 5px solid #add8e6;
+}*/
+
+header {
+    width: 100%;
+    background-color: #d3d3d3;
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
+    display: inline-block;
 }
 
 header .h-top {
@@ -80,7 +88,6 @@ header .h-top {
 
 header .h-top .h-bar {
     display: flex;
-    background-color: goldenrod;
     align-items: center;
 }
 
@@ -93,8 +100,8 @@ header .h-top .h-login {
     text-align: right;
 }
 
-header .h-top .h-logo,
-header .h-top .h-login
+header .h-top .h-logo
+/*header .h-top .h-login*/
 {
     width: 20%;
 }
@@ -116,12 +123,57 @@ header .h-bottom {
   padding: 50px;
   align-items: center;
   justify-content: center;
+
 }
 
 header .h-bottom .content {
     background-color: #ee82ee;
     width: 900px;
   }
+
+.btn {
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.h-top a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.h-login a{
+    color: #000000;
+}
+
+a:hover {
+    color: #0000ff
+}
+
+.h-contenuto {
+    text-align: center;
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 23px;
+}
+
+.h-contenuto h1 {
+    line-height: 200px;
+    font-size: 70px;
+}
+
+.h-bottoni {
+    padding: 20px;
+}
+
+.h-download a{
+    color: #000000;
+}
+
+.h-browser{
+    background-color: #000000;
+}
 
 /*-------------
     Main
@@ -144,20 +196,36 @@ main section .row {
   main section .row > .col-xl {
     width: 60%;
     background-color: #1e90ff;
+    background-image: url(../img/item1.svg);
+    background-size: cover;
   }
   
 main section .row > .col-ll {
     width: 40%;
-    background-color: #ffc0cb;
+    background-color: #ffffff;
   }
   
 main section .row > .col-full {
     width: 100%;
-    background-color: #228b22;
+    background-color: #ffffff;
+    background-image: url(../img/item4-big.svg);
+    background-size: 1200px 1100px;
+    float: right;
   }
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+.contenuto-main {
+    text-align: left;
+    color: #000000;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+section contenuto-main .h-download a{
+    color: blue
 }
 
 /*-------------
@@ -210,4 +278,8 @@ footer .f-bottom .logo, footer .f-bottom .btn {
     background-color:#f08080 ;
     padding: 5px;
 
+}
+
+footer .f-top .h-links ul li{
+list-style-type: none;
 }
