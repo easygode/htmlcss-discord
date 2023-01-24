@@ -1,0 +1,213 @@
+/*-------------
+    Reset
+--------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------
+    Typo
+--------------*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-------------
+    Debug
+--------------*/
+
+.debug header .h-top .h-bar >div,
+.debug header .h-top .h-bar >nav,
+.debug header .h-bottom > div,
+.debug main section .row > div,
+.debug .f-top > div,
+.debug .f-bottom > div
+{
+  border: 2px dashed black;
+}
+
+.debug header .h-bottom .content {
+    height: 400px;
+  }
+  
+  
+  .debug main section .row > .col-xl,
+  .debug main section .row > .col-ll {
+    height: 600px;
+  }
+  
+  
+  .debug main section .row > .col-full {
+    height: 900px;
+  }
+  
+  .debug footer .f-top .menu-col > .col {
+    border: 2px dashed white;
+  }
+
+/*-------------
+    Common
+--------------*/
+
+.container {
+    margin: 0 auto;
+}
+
+.container.xl {
+    max-width: 1200px;
+}
+
+.container.ll {
+    max-width: 900px;
+}
+
+/*-------------
+    Header
+--------------*/
+
+header {
+    border-bottom: 5px solid #add8e6;
+}
+
+header .h-top {
+    background-color: #add8e6;
+    padding: 15px 0;
+}
+
+header .h-top .h-bar {
+    display: flex;
+    background-color: goldenrod;
+    align-items: center;
+}
+
+header .h-top .h-bar > div,
+header .h-top .h-bar > nav {
+  padding: 10px;
+}
+
+header .h-top .h-login {
+    text-align: right;
+}
+
+header .h-top .h-logo,
+header .h-top .h-login
+{
+    width: 20%;
+}
+
+header .h-top .h-links {
+    flex-grow: 1;
+}
+
+header .h-top .h-links ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+header .h-bottom {
+  background-color: #00008b;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+header .h-bottom .content {
+    background-color: #ee82ee;
+    width: 900px;
+  }
+
+/*-------------
+    Main
+--------------*/
+
+main section {
+    padding: 50px;
+  }
+
+main section:nth-child(even) {
+    background-color: #d3d3d3;
+}
+
+main section .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  main section .row > .col-xl {
+    width: 60%;
+    background-color: #1e90ff;
+  }
+  
+main section .row > .col-ll {
+    width: 40%;
+    background-color: #ffc0cb;
+  }
+  
+main section .row > .col-full {
+    width: 100%;
+    background-color: #228b22;
+  }
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/*-------------
+    Footer
+--------------*/
+
+footer {
+    background-color: #24292c;
+}
+
+footer .f-top {
+    display: flex;
+    padding: 10px; 
+    height: 600px;
+}
+
+footer .f-top .main-col {
+    flex-basis: 30%;
+    background-color: #f08080;
+}
+
+footer .f-top .menu-col {
+    flex-basis: 70%;
+    background-color: #20b2aa;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .f-top .menu-col > .col{
+    flex-basis: 25%;
+}
+
+footer hr {
+    margin: 30px 0;
+  }
+
+footer .f-bottom .menu-col > .col{
+    flex-basis: 25%;
+}
+
+footer .f-bottom {
+background-color: #51f3b0;
+width: 1200px;
+display: flex;
+justify-content: space-between;
+padding: 20px 0;
+}
+
+footer .f-bottom .logo, footer .f-bottom .btn {
+    background-color:#f08080 ;
+    padding: 5px;
+
+}
